@@ -1,0 +1,251 @@
+body
+{
+	font-family: Roboto, sans-serif;
+}
+
+#navBar_hori.fixed
+{
+	position:fixed;
+ 	top:0;
+  	z-index:1000;
+  	width: 100%;
+  	border-radius: 0px;
+}
+
+#corps_body
+{
+	padding: 1.5% 6% 0% 6%;
+	width: 100%;
+	height: 100%;
+}
+
+header
+{
+	background: linear-gradient(#5D7E39, #517132);
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+#image_header
+{
+	width: 8%;
+	margin-top: -2%;
+}
+
+#title_header
+{
+	font-size: 70px;
+	color: white;
+	padding-top: 1%;
+	text-shadow: 2px 2px black;
+}
+
+#div_header
+{
+	text-align: center;
+}
+
+
+/* Boutons formulaire de commande */
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px -50px #5d7e39;
+	-webkit-box-shadow:inset 0px 1px 0px -50px #5d7e39;
+	box-shadow:inset 0px 1px 0px -50px #5d7e39;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5d7e39), color-stop(1, #527132));
+	background:-moz-linear-gradient(top, #5d7e39 5%, #527132 100%);
+	background:-webkit-linear-gradient(top, #5d7e39 5%, #527132 100%);
+	background:-o-linear-gradient(top, #5d7e39 5%, #527132 100%);
+	background:-ms-linear-gradient(top, #5d7e39 5%, #527132 100%);
+	background:linear-gradient(to bottom, #5d7e39 5%, #527132 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5d7e39', endColorstr='#527132',GradientType=0);
+	background-color:#5d7e39;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:14px;
+	font-weight:bold;
+	padding:8px 8px;
+	text-decoration:none;
+	text-shadow:0px 0px 5px #000000;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #527132), color-stop(1, #5d7e39));
+	background:-moz-linear-gradient(top, #527132 5%, #5d7e39 100%);
+	background:-webkit-linear-gradient(top, #527132 5%, #5d7e39 100%);
+	background:-o-linear-gradient(top, #527132 5%, #5d7e39 100%);
+	background:-ms-linear-gradient(top, #527132 5%, #5d7e39 100%);
+	background:linear-gradient(to bottom, #527132 5%, #5d7e39 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#527132', endColorstr='#5d7e39',GradientType=0);
+	background-color:#527132;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#designation, #quantite, #prix, #numero, #selectProduit, #choose
+{
+	width: 350px;
+}
+
+
+#choose
+{
+	width: 20px;
+	float: left;
+}
+
+#chooseQuantite
+{
+	width: 20px;
+	float: left;
+}
+
+
+#cell
+{
+	width: 200px;
+}
+
+#formulaire-ajout-modif
+{
+	margin-right: 0;
+	margin-top: 3%;
+}
+
+#card-right
+{
+	width: 500px;
+	margin-left: 5%;
+}
+
+#card-left
+{
+	width: 500px;
+	margin-left: 5%;
+}
+
+#liste-articles
+{
+	height: 362px;
+	overflow: scroll;
+
+}
+
+
+#one-article p
+{
+	margin-left: 2%;
+	color: rgba(128, 96, 33, 0.6);
+}
+
+#one-article b
+{
+	color: black;
+}
+
+#label-articles
+{
+	background-color: #c9cec4;
+	width: 100%;
+}
+
+
+#entete-produits
+{
+	background-color: #557534;
+	padding: 3%;
+	border-radius: 7px 7px 0px 0px;
+}
+
+
+#contour-list-produits
+{
+	border : solid black 1px;
+	border-radius: 7px;
+}
+
+.titre-action
+{
+	width: 300px;
+}
+
+#icone-hamburger
+{
+	visibility: hidden;
+}
+
+#croix-menu
+{
+	display: none;
+}
+
+
+
+@media screen and (max-width: 800px) 
+{
+	#card-left
+	{
+		width: 300px;
+	}
+
+	#card-right
+	{
+		width: 300px;
+	}
+
+	#designation, #quantite, #prix, #numero, #selectProduit, #choose, #chooseQuantite
+	{
+		width: 300px;
+	}
+
+	#navBar_hori
+	{
+		display: none;
+		z-index: 999;
+		height: 100%;
+		width: 80%;
+	}
+
+	#title_header
+	{
+		font-size: 26px;
+	}
+
+	#icone-hamburger
+	{
+		visibility: visible;
+		float: left; 
+		margin-top: 2%;
+		margin-left: 2%;
+	}
+
+	#one-article
+	{
+		margin-left: 5%;
+	}
+
+	#diapo
+	{
+		display: none;
+	}
+	
+	#navBar_hori
+	{
+		position:fixed;
+ 		top:0;
+  		z-index:1000;
+  		width: 80%;
+  		border-radius: 0px;
+	}
+
+	#croix-menu
+	{
+		display: inherit;
+	}
+}
